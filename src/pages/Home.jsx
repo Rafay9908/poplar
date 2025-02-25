@@ -12,11 +12,15 @@ import linkIcon from "../assets/link.svg";
 
 import clip from "../assets/bg-clip.svg";
 
-import poplarCard from '../assets/poplar-card.svg'
+import poplarCard from "../assets/poplar-card.svg";
+
+import dashboard from '../assets/dashboard.png'
+
+import cardOne from '../assets/card-one-image.svg'
 
 function Home() {
-    const [selected, setSelected] = useState('1 month');
-    const options = ["1 month", "12 months", "24 months", "36 months"];
+  const [selected, setSelected] = useState("1 month");
+  const options = ["1 month", "12 months", "24 months", "36 months"];
 
   return (
     <>
@@ -72,134 +76,230 @@ function Home() {
 
       <div className="my-[200px]">
         <div className="container">
-            <div className="flex items-center">
-          <div className="w-[35%]">
-            <img src={markIcon} alt="" />
-            <h3 className="font-arbutus text-7xl my-[50px]">
-              What is <br />
-              <span className="text-[#11CC7A] leading-[110%]"> idle cash?</span>
-            </h3>
-            <p className="text-2xl text-[#123149] leading-[150%]">
-              At Poplar, we define “idle money” as cash that is sitting in an
-              account for a day, a weekend, a week, or even a year that is not
-              invested or creating real-time value to the business.
-            </p>
-          </div>
-
-          <div
-            
-            className="flex flex-col items-center"
-          >
-            <img alt="" />
-            <div className="flex gap-20">
-              <div className="w-[510px] border-[#D0D6DB] border-solid border rounded-[20px] p-[40px] flex">
-                <img src={payIcon} alt="" />
-                <div className="pl-[40px]">
-                  <h4 className="text-[34px] text-[#123149]">payroll</h4>
-                  <p className="text-lg text-[#123149] ">
-                    Whether it’s weekly, bi-weekly, monthly or quarterly you
-                    have money sitting idle for payroll that could be earning.
-                  </p>
-                </div>
-              </div>
-              <img src={linkIcon} alt="" />
+          <div className="flex items-center">
+            <div className="w-[35%]">
+              <img src={markIcon} alt="" />
+              <h3 className="font-arbutus text-7xl my-[50px]">
+                What is <br />
+                <span className="text-[#11CC7A] leading-[110%]">
+                  {" "}
+                  idle cash?
+                </span>
+              </h3>
+              <p className="text-2xl text-[#123149] leading-[150%]">
+                At Poplar, we define “idle money” as cash that is sitting in an
+                account for a day, a weekend, a week, or even a year that is not
+                invested or creating real-time value to the business.
+              </p>
             </div>
 
-            <div className="flex gap-20 pl-[250px] my-[20px]">
-              <img src={linkIcon} className="rotate-180" alt="" />
-              <div className="w-[510px] border-[#D0D6DB] border-solid border rounded-[20px] p-[40px] flex">
-                <img src={payIcon} alt="" />
-                <div className="pl-[40px]">
-                  <h4 className="text-[34px] text-[#123149]">payroll</h4>
-                  <p className="text-lg text-[#123149] ">
-                    Whether it’s weekly, bi-weekly, monthly or quarterly you
-                    have money sitting idle for payroll that could be earning.
-                  </p>
+            <div className="flex flex-col items-center">
+              <img alt="" />
+              <div className="flex gap-20">
+                <div className="w-[510px] border-[#D0D6DB] border-solid border rounded-[20px] p-[40px] flex">
+                  <img src={payIcon} alt="" />
+                  <div className="pl-[40px]">
+                    <h4 className="text-[34px] text-[#123149]">payroll</h4>
+                    <p className="text-lg text-[#123149] ">
+                      Whether it’s weekly, bi-weekly, monthly or quarterly you
+                      have money sitting idle for payroll that could be earning.
+                    </p>
+                  </div>
                 </div>
+                <img src={linkIcon} alt="" />
               </div>
-            </div>
 
-            <div>
-              <div className="w-[510px] border-[#D0D6DB] border-solid border rounded-[20px] p-[40px] flex">
-                <img src={payIcon} alt="" />
-                <div className="pl-[40px]">
-                  <h4 className="text-[34px] text-[#123149]">payroll</h4>
-                  <p className="text-lg text-[#123149] ">
-                    Whether it’s weekly, bi-weekly, monthly or quarterly you
-                    have money sitting idle for payroll that could be earning.
-                  </p>
+              <div className="flex gap-20 pl-[250px] my-[20px]">
+                <img src={linkIcon} className="rotate-180" alt="" />
+                <div className="w-[510px] border-[#D0D6DB] border-solid border rounded-[20px] p-[40px] flex">
+                  <img src={payIcon} alt="" />
+                  <div className="pl-[40px]">
+                    <h4 className="text-[34px] text-[#123149]">payroll</h4>
+                    <p className="text-lg text-[#123149] ">
+                      Whether it’s weekly, bi-weekly, monthly or quarterly you
+                      have money sitting idle for payroll that could be earning.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div className="w-[510px] border-[#D0D6DB] border-solid border rounded-[20px] p-[40px] flex">
+                  <img src={payIcon} alt="" />
+                  <div className="pl-[40px]">
+                    <h4 className="text-[34px] text-[#123149]">payroll</h4>
+                    <p className="text-lg text-[#123149] ">
+                      Whether it’s weekly, bi-weekly, monthly or quarterly you
+                      have money sitting idle for payroll that could be earning.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
 
       <div>
         <div className="container">
-            <div className="flex flex-col items-center">
-            <h3 className="text-[#123149] font-arbutus text-[72px]"><span className="text-[#11CC7A]">Earn More</span> With Poplar</h3>
-            <p className="text-lg text-[#123149] leading-[150%] my-[50px]">See how Poplar can activate your idle money.</p>
-            <p className="mb-[50px] text-[#123149] leading-[150%]">Select the amount of idle cash you want to deposit, and your earning period:</p>
+          <div className="flex flex-col items-center">
+            <h3 className="text-[#123149] font-arbutus text-[72px]">
+              <span className="text-[#11CC7A]">Earn More</span> With Poplar
+            </h3>
+            <p className="text-lg text-[#123149] leading-[150%] my-[50px]">
+              See how Poplar can activate your idle money.
+            </p>
+            <p className="mb-[50px] text-[#123149] leading-[150%]">
+              Select the amount of idle cash you want to deposit, and your
+              earning period:
+            </p>
 
             <div className="flex items-center">
-                <input type="text" className="text-[#123149] text-[32px] border border-solid border-[#D0D6DB] outline-none rounded-[5px] px-[70px] py-[10px] w-[340px] font-bold mr-[20px]"/>
+              <input
+                type="text"
+                className="text-[#123149] text-[32px] border border-solid border-[#D0D6DB] outline-none rounded-[5px] px-[70px] py-[10px] w-[340px] font-bold mr-[20px]"
+              />
 
-                <div className="rounded-[85px] border border-solid border-[#D0D6DB] flex gap-[40px] py-[10px] px-[10px]">
+              <div className="rounded-[85px] border border-solid border-[#D0D6DB] flex gap-[40px] py-[10px] px-[10px]">
                 {options.map((option, index) => (
-                    <button 
-                    className={`${option === selected ? "bg-green-500 py-[27.5px] px-[30px] text-white" : "text-[#D0D6DB]"} transiton rounded-[85px] cursor-pointer last:ml-2 py-[27.5px] px-[30px] text-lg font-bold`}
+                  <button
+                    className={`${
+                      option === selected
+                        ? "bg-green-500 py-[27.5px] px-[30px] text-white"
+                        : "text-[#D0D6DB]"
+                    } transiton rounded-[85px] cursor-pointer last:ml-2 py-[27.5px] px-[30px] text-lg font-bold`}
                     onClick={() => setSelected(option)}
-                    >
-                        {option}
-                    </button>
+                  >
+                    {option}
+                  </button>
                 ))}
-                </div>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
       </div>
 
       <div className="mt-[50px]">
         <div className="container">
-            <div className="flex">
-                <div className="bg-[#11CC7A] w-[49%] py-10 px-[38px] rounded-[50px]">
-                    <div className="flex items-center">
-                        <img src={poplarCard} alt="#" />
-                        <p className="pl-5 text-5xl text-[#FFFFFF] font-arbutus">Poplar account</p>
-                    </div>
+          <div className="flex flex-row  justify-between relative">
+            <div className="bg-[#11CC7A] w-[49%] max-w-[705px] py-10 px-[38px] rounded-[50px]">
+              <div className="flex items-center">
+                <img src={poplarCard} alt="#" />
+                <p className="pl-5 text-5xl text-[#FFFFFF] font-arbutus">
+                  Poplar account
+                </p>
+              </div>
 
-                    <p className="text-2xl leading-[150%] text-white py-[30px]">Accounts that earn based on your businesses needs.</p>
-                    <div className="bg-[#58DBA2] h-[1px] mb-[30px]"></div>
+              <p className="text-2xl leading-[150%] text-white py-[30px]">
+                Accounts that earn based on your businesses needs.
+              </p>
+              <div className="bg-[#58DBA2] h-[1px] mb-[30px]"></div>
 
-                    <div>
-                        <div className="text-lg leading-[80%] text-white flex justify-between w-[65%]">
-                            <p>In 36 months you will have</p>
-                            <p>APY</p>
-                        </div>
+              <div>
+                <div className="text-lg leading-[80%] text-white flex justify-between w-[65%]"></div>
 
-                        <div className="text-white flex justify-between w-[65%] font-arbutus text-6xl">
-                            <p>$115,763</p>
-                            <p>5%</p>
-                        </div>
-                    </div>
+                <div className="text-white flex justify-between w-[65%] font-arbutus text-6xl"></div>
+              </div>
 
-                    <div>
-                        <div>
-                            <p>Automated</p>
-                            <p>Withdrawl Limits</p>
-                        </div>
+              <div>
+                <div className="flex justify-between flex-row w-[66%]">
+                  <div className="">
+                    <p className="text-white text-lg leading-[80%]">In 36 months you will have</p>
+                    <p className="text-6xl font-arbutus text-white mt-[10px]">$115,763</p>
+                  </div>
 
-                        <div>
-                            <p>Yes</p>
-                            <p>None</p>
-                        </div>
-                    </div>
+                  <div>
+                    <p className="text-white text-lg leading-[80%]">APY</p>
+                    <p className="text-6xl font-arbutus text-white mt-[10px]">5%</p>
+                  </div>
                 </div>
 
-                
+                <div className="flex justify-between flex-row w-[66%] mt-[30px]">
+                  <div className="">
+                    <p className="text-white text-lg leading-[80%]">Automated</p>
+                    <p className="text-[30px] font-arbutus text-white mt-[10px]">YES</p>
+                  </div>
+
+                  <div>
+                    <p className="text-white text-lg leading-[80%]">Withdrawl Limits</p>
+                    <p className="text-[30px] font-arbutus text-white mt-[10px]">NONE</p>
+                  </div>
+                </div>
+              </div>
             </div>
+
+
+            <div className="bg-[#11CC7A] w-[49%] max-w-[705px] py-10 px-[38px] rounded-[50px]">
+              <div className="flex items-center">
+                <img src={poplarCard} alt="#" />
+                <p className="pl-5 text-5xl text-[#FFFFFF] font-arbutus">
+                  Poplar account
+                </p>
+              </div>
+
+              <p className="text-2xl leading-[150%] text-white py-[30px]">
+                Accounts that earn based on your businesses needs.
+              </p>
+              <div className="bg-[#58DBA2] h-[1px] mb-[30px]"></div>
+
+              <div>
+                <div className="text-lg leading-[80%] text-white flex justify-between w-[65%]"></div>
+
+                <div className="text-white flex justify-between w-[65%] font-arbutus text-6xl"></div>
+              </div>
+
+              <div>
+                <div className="flex justify-between flex-row w-[66%]">
+                  <div className="">
+                    <p className="text-white text-lg leading-[80%]">In 36 months you will have</p>
+                    <p className="text-6xl font-arbutus text-white mt-[10px]">$115,763</p>
+                  </div>
+
+                  <div>
+                    <p className="text-white text-lg leading-[80%]">APY</p>
+                    <p className="text-6xl font-arbutus text-white mt-[10px]">5%</p>
+                  </div>
+                </div>
+
+                <div className="flex justify-between flex-row w-[66%] mt-[30px]">
+                  <div className="">
+                    <p className="text-white text-lg leading-[80%]">Automated</p>
+                    <p className="text-[30px] font-arbutus text-white mt-[10px]">YES</p>
+                  </div>
+
+                  <div>
+                    <p className="text-white text-lg leading-[80%]">Withdrawl Limits</p>
+                    <p className="text-[30px] font-arbutus text-white mt-[10px]">NONE</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-[100px]">
+        <div className="container">
+          <div>
+            <div className="flex items-center justify-between mb-[30px]">
+              <h3 className="font-arbutus text-[72px] text-[#123149]">How It Works</h3>
+              <p className="text-[#8898A4] text-lg leading-[150%] font-normal text-right">Automatically Invest All Unused Cash Anywhere, <br /> Anytime In Traditional and Novel Markets.</p>
+            </div>
+
+            <img src={dashboard} alt="" />
+
+            <div className="mt-[60px]">
+              <div>
+                <div className="max-w-[705px] w-[49%] flex flex-col items-center text-[#FAFBFD] border border-solid border-[#CCD3D9] p-[60px]">
+                  <img className="w-[99px]" src={cardOne} alt="" />
+                  <h3 className="text-center text-[36px] text-[#123149] leading-[130%] font0-arbutus my-[20px]">Set up an account online with zero costs</h3>
+                  <p className="text-[24px] text-[#8898A4] text-center">Connect it to bank account & get instant recommendations on investment amounts and durations</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <Footer />

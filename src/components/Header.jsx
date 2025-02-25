@@ -37,7 +37,7 @@ function Header() {
         </ul>
         <a
           href="#"
-          className=" py-5 px-8 border rounded-2xl border-[#123149] font-bold text-lg text-[#123149] xl:flex hidden leading-none w-auto"
+          className=" py-5 px-8 border border-solid rounded-2xl border-[#123149] font-bold text-lg text-[#123149] xl:flex hidden leading-none w-auto"
         >
           Join the waitlist
         </a>
