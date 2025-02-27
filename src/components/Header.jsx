@@ -12,9 +12,9 @@ function Header() {
 
   useEffect(() => {
     if (isOpen) {
-      document.body.classList.add("overflow-y-hidden");
+      document.body.classList.add("overflow-hidden");
     } else {
-      document.body.classList.remove("overflow-y-hidden");
+      document.body.classList.remove("overflow-hidden");
     }
 
   }, [isOpen])
@@ -55,7 +55,7 @@ function Header() {
       </div>
       </div>
 
-        <ul className={`${isOpen? "" : "hidden"} h-[calc(100vh-170px)] bg-white  flex-col items-center justify-center gap-[40px] text-center flex transition`}>
+        <ul className={`${isOpen? "" : "hidden"} h-[calc(100vh-170px)] bg-white  flex-col items-center justify-center gap-[40px] text-center flex transition xl:hidden`}>
           {navItems.map((item) => (
             <li key={item}  className="cursor-pointer text-[#123149] text-2xl hover:text-[#11CC7A] transition">{item}</li>
           ))}

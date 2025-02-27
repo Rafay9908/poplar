@@ -9,6 +9,8 @@ import heroBgMobile from '../assets/hero-bg-mobile.svg'
 import markIcon from "../assets/mark-icon.svg";
 
 import payIcon from "../assets/pay-icon.svg";
+import inventoryIcon from '../assets/inventory.svg' 
+import taxesIcon from '../assets/taxes.svg' 
 import linkIcon from "../assets/link.svg";
 
 import clip from "../assets/bg-clip.svg";
@@ -33,7 +35,8 @@ function Home() {
   return (
     <>
       <Header />
-      <div className="mb-[2000px]">
+
+      <div className="mb-[30px]">
         <div className="container">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="w-[100%] lg:w-[50%] text-center lg:text-left">
@@ -77,72 +80,69 @@ function Home() {
               </div>
             </div>
 
-            <img className="hidden lg:block lg:w-[50%]" src={heroImage} alt="" />
+            <img className="hidden lg:block lg:w-[55%]" src={heroImage} alt="" />
             
           </div>
         </div>
-        <div className="mt-[86px] mb-[30px] relative">
-          <img className="absolute w-[100%] right-0 lg:hidden" src={heroBgMobile} alt="" />
+        <div className="mt-[86px] relative ">
+          <img className="absolute max-w-[100%] w-[552px] md:w-[680px] right-0 lg:hidden" src={heroBgMobile} alt="" />
         </div>
       </div>
 
-      {/* <div className="my-[200px]">
+      <div className="sm:mt-[900px] md:mt-[1050px] lg:mt-[0px] xl:mt-[200px] xl:mb-[100px] mb-[56px]  relative image-margin">
         <div className="container">
-          <div className="flex items-center">
-            <div className="w-[35%]">
-              <img src={markIcon} alt="" />
-              <h3 className="font-arbutus text-7xl my-[50px]">
-                What is <br />
+          <div className="flex flex-col xl:flex-row items-center">
+            <div className="mb-[40px] xl:mb-[0px] flex flex-col items-center xl:items-start w-[100%] xl:w-[35%]">
+              <img className="w-[100px]" src={markIcon} alt="" />
+              <h3 className="text-center lg:text-left font-arbutus text-[clamp(48px,5.25vw,72px)] my-[50px]">
+                What Is <br />
                 <span className="text-[#11CC7A] leading-[110%]">
-                  {" "}
-                  idle cash?
+                  Idle Cash?
                 </span>
               </h3>
-              <p className="text-2xl text-[#123149] leading-[150%]">
+              <p className="text-center xl:text-left text-2xl text-[#8898A4] leading-[150%]">
                 At Poplar, we define “idle money” as cash that is sitting in an
                 account for a day, a weekend, a week, or even a year that is not
                 invested or creating real-time value to the business.
               </p>
             </div>
 
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center ">
              
               <div className="flex gap-20">
-                <div className="w-[510px] border-[#D0D6DB] border-solid border rounded-[20px] p-[40px] flex">
+                <div className="w-[100%] xl:w-[510px] border-[#D0D6DB] border-solid border rounded-[20px] p-[40px] flex flex-col lg:flex-row items-center">
                   <img src={payIcon} alt="" />
-                  <div className="pl-[40px]">
-                    <h4 className="text-[34px] text-[#123149]">payroll</h4>
+                  <div className="lg:pl-[40px] text-center lg:text-left">
+                    <h4 className="text-[34px] text-[#123149] font-arbutus mt-[20px] mb-[40px]">Payroll</h4>
                     <p className="text-lg text-[#123149] ">
                       Whether it’s weekly, bi-weekly, monthly or quarterly you
                       have money sitting idle for payroll that could be earning.
                     </p>
                   </div>
                 </div>
-                <img src={linkIcon} alt="" />
+                <img className="hidden xl:block" src={linkIcon} alt="" />
               </div>
 
-              <div className="flex gap-20 pl-[200px] my-[20px]">
-                <img src={linkIcon} className="rotate-180" alt="" />
-                <div className="w-[510px] border-[#D0D6DB] border-solid border rounded-[20px] p-[40px] flex">
-                  <img src={payIcon} alt="" />
-                  <div className="pl-[40px]">
-                    <h4 className="text-[34px] text-[#123149]">payroll</h4>
+              <div className="flex gap-20 xl:pl-[200px] my-[40px] lg:my-[20px]">
+                <img src={linkIcon} className="rotate-180 hidden xl:block" alt="" />
+                <div className="w-[100%] xl:w-[510px] border-[#D0D6DB] border-solid border rounded-[20px] p-[40px] flex flex-col lg:flex-row items-center">
+                  <img className="w-[100px]" src={inventoryIcon} alt="" />
+                  <div className="text-center lg:text-left lg:pl-[40px]">
+                    <h4 className="text-[34px] text-[#123149] font-arbutus mt-[20px] mb-[40px]">Inventory</h4>
                     <p className="text-lg text-[#123149] ">
-                      Whether it’s weekly, bi-weekly, monthly or quarterly you
-                      have money sitting idle for payroll that could be earning.
+                    Whether it’s weekly, bi-weekly, monthly or quarterly you have money sitting idle for payroll that could be earning.
                     </p>
                   </div>
                 </div>
               </div>
 
               <div>
-                <div className="w-[510px] border-[#D0D6DB] border-solid border rounded-[20px] p-[40px] flex">
-                  <img src={payIcon} alt="" />
-                  <div className="pl-[40px]">
-                    <h4 className="text-[34px] text-[#123149]">payroll</h4>
+                <div className="w-[100%] xl:w-[510px] border-[#D0D6DB] border-solid border rounded-[20px] p-[40px] flex flex-col lg:flex-row items-center">
+                  <img className="w-[100px]" src={taxesIcon} alt="" />
+                  <div className="text-center lg:text-left lg:pl-[40px]">
+                    <h4 className="text-[34px] text-[#123149] font-arbutus mt-[20px] mb-[40px]">Taxes</h4>
                     <p className="text-lg text-[#123149] ">
-                      Whether it’s weekly, bi-weekly, monthly or quarterly you
-                      have money sitting idle for payroll that could be earning.
+                    Whether it’s weekly, bi-weekly, monthly or quarterly you have money sitting idle for payroll that could be earning.
                     </p>
                   </div>
                 </div>
@@ -150,36 +150,36 @@ function Home() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div>
+      <div>
         <div className="container">
-          <div className="flex flex-col items-center">
-            <h3 className="text-[#123149] font-arbutus text-[72px]">
+          <div className="flex flex-col items-center text-center">
+            <h3 className="text-[#123149] font-arbutus text-[clamp(48px,5.25vw,72px)]">
               <span className="text-[#11CC7A]">Earn More</span> With Poplar
             </h3>
-            <p className="text-lg text-[#123149] leading-[150%] my-[50px]">
+            <p className="text-2xl text-[#8898A4] leading-[150%] my-[50px]">
               See how Poplar can activate your idle money.
             </p>
-            <p className="mb-[50px] text-[#123149] leading-[150%]">
+            <p className="mb-[40px] text-2xl text-[#123149] leading-[150%]">
               Select the amount of idle cash you want to deposit, and your
               earning period:
             </p>
 
-            <div className="flex items-center">
+            <div className="flex flex-col xl:flex-row items-center">
               <input
-                type="text"
-                className="text-[#123149] text-[32px] border border-solid border-[#D0D6DB] outline-none rounded-[5px] px-[70px] py-[10px] w-[340px] font-bold mr-[20px]"
+                type="number"
+                className="text-[#123149] text-[32px] border border-solid border-[#D0D6DB] outline-none rounded-[5px] px-[70px] py-[10px] w-[340px] font-bold mr-[20px] xl:mb-[0px] mb-[20px]"
               />
 
-              <div className="rounded-[85px] border border-solid border-[#D0D6DB] flex gap-[40px] py-[10px] px-[10px]">
+              <div className="rounded-0 xl:rounded-[85px] border border-solid border-[#D0D6DB] flex gap-[40px] py-[10px] px-[10px] flex-wrap justify-center xl:flex-nowrap xl:justify-baseline">
                 {options.map((option, index) => (
                   <button
                     className={`${
                       option === selected
-                        ? "bg-green-500 py-[27.5px] px-[30px] text-white"
+                        ? "bg-green-500 py-[23.5px] xl:py-[27.5px] px-[40px] xl:px-[30px] text-white"
                         : "text-[#D0D6DB]"
-                    } transiton rounded-[85px] cursor-pointer last:ml-2 py-[27.5px] px-[30px] text-lg font-bold`}
+                    } transiton rounded-[15px] xl:rounded-[85px] cursor-pointer last:ml-2 py-[27.5px] px-[40px] xl:px-[30px] text-lg font-bold`}
                     onClick={() => setSelected(option)}
                   >
                     {option}
@@ -189,20 +189,20 @@ function Home() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className="mt-[50px]">
+      <div className="mt-[50px]">
         <div className="container">
-          <div className="flex flex-row  justify-between relative">
-            <div className="bg-[#11CC7A] w-[49%] max-w-[705px] py-10 px-[38px] rounded-[50px]">
+          <div className="flex flex-col xl:flex-row justify-between relative">
+            <div className="bg-[#11CC7A] w-[100%] xl:w-[49%] xl:max-w-[705px] py-10 px-[38px] rounded-[50px] mb-[40px] xl:mb-[0px]">
               <div className="flex items-center">
                 <img src={poplarCard} alt="#" />
-                <p className="pl-5 text-5xl text-[#FFFFFF] font-arbutus">
+                <p className="pl-5 text-[36px] xl:text-[48px] text-[#FFFFFF] font-arbutus">
                   Poplar account
                 </p>
               </div>
 
-              <p className="text-2xl leading-[150%] text-white py-[30px]">
+              <p className="text-[20px] xl:text-2xl leading-[150%] text-white py-[30px]">
                 Accounts that earn based on your businesses needs.
               </p>
               <div className="bg-[#58DBA2] h-[1px] mb-[30px]"></div>
@@ -214,13 +214,13 @@ function Home() {
               </div>
 
               <div>
-                <div className="flex justify-between flex-row w-[66%]">
-                  <div className="">
+                <div className="flex justify-between flex-col xl:flex-row  xl:w-[66%]">
+                  <div className="flex items-center xl:items-start xl:block">
                     <p className="text-white text-lg leading-[80%]">In 36 months you will have</p>
                     <p className="text-6xl font-arbutus text-white mt-[10px]">$115,763</p>
                   </div>
 
-                  <div>
+                  <div className="flex xl:block">
                     <p className="text-white text-lg leading-[80%]">APY</p>
                     <p className="text-6xl font-arbutus text-white mt-[10px]">5%</p>
                   </div>
@@ -241,7 +241,7 @@ function Home() {
             </div>
 
 
-            <div className="bg-[#F3F5F6] w-[49%] max-w-[705px] py-10 px-[38px] rounded-[50px]">
+            <div className="bg-[#F3F5F6] w-[100%] xl:w-[49%] xl:max-w-[705px] py-10 px-[38px] rounded-[50px]">
               <div>
                 <p className="pl-5 text-5xl text-[#123149] font-arbutus">
                   Checking account
@@ -289,14 +289,14 @@ function Home() {
 
           </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className="mt-[100px]">
+      <div className="mt-[100px]">
         <div className="container">
           <div>
             <div className="flex items-center justify-between mb-[30px]">
               <h3 className="font-arbutus text-[72px] text-[#123149]">How It Works</h3>
-              <p className="text-[#8898A4] text-lg leading-[150%] font-normal text-right">Automatically Invest All Unused Cash Anywhere, <br /> Anytime In Traditional and Novel Markets.</p>
+              <p className="text-[#8898A4] text-lg leading-[150%] font-normal text-right">Automatically Invest All Unused Cash Anywhere, Anytime In Traditional and Novel Markets.</p>
             </div>
 
             <img src={dashboard} alt="" />
@@ -334,9 +334,9 @@ function Home() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className="my-[240px]">
+      <div className="my-[240px]">
         <div className="container relative">
         <img className="absolute top-[-200px] left-[-100px] z-[-1]" src={blob} alt="" />
           <div className="z-1 h-[453px] bg-[#11CC7A] rounded-[80px]">
@@ -348,9 +348,9 @@ function Home() {
                 </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div>
+      <div>
         <div className="container">
         <div className="flex items-center justify-between mb-[30px]">
               <h3 className="font-arbutus leading-[100%] text-[72px] text-[#123149]">Safe & <br /> <span className="text-[#11CC7A]"> Accessible</span></h3>
@@ -389,9 +389,9 @@ function Home() {
             </div>
         </div>
 
-      </div> */}
+      </div>
 
-      {/* <div className="pt-[30px] pb-[100px]">
+      <div className="pt-[30px] pb-[100px]">
         <div className="container text-center flex flex-col items-center gap-[40px]">
           <h3 className="font-arbutus text-7xl text-[#0a283f]">ready to <span className="text-[#11cc7a]">learn more?</span></h3>
           <p className="text-[#84939F] text-2xl leading-[150%]">With Poplar’s Yield as a Service, businesses can invest their idle cash, <br /> turning their cash from a cost center to a profit center.</p>
@@ -409,7 +409,7 @@ function Home() {
                 </a>
           </div>
         </div>
-      </div> */}
+      </div>
       
       <Footer />
     </>

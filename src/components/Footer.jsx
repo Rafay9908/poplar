@@ -5,7 +5,7 @@ import logo from '../assets/poplar-logo-footer.svg'
 function Footer() {
   return (
     <>
-    <div className='bg-[#0A283F] p-[100px]'>
+    <div className='bg-[#0A283F] py-[100px] px-[30px] xl:px-[100px]'>
     <div className='container'>
       <div className='flex items-center text-center flex-col'>
         <img src={logo} alt="" />
