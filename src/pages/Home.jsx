@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import tick from "../assets/hero-icon.svg";
 import arrow from "../assets/btn-arrow.svg";
 import heroImage from "../assets/hero-image.png";
+import heroBgMobile from '../assets/hero-bg-mobile.svg'
 import markIcon from "../assets/mark-icon.svg";
 
 import payIcon from "../assets/pay-icon.svg";
@@ -32,19 +33,19 @@ function Home() {
   return (
     <>
       <Header />
-      <div>
+      <div className="mb-[2000px]">
         <div className="container">
-          <div className="flex flex-row items-center">
-            <div className="w-[50%]">
-              <h3 className="text-[#123149] font-arbutus text-[clamp(40px,5vw,96px)]">
-                Yield Every <br /> Minute™
+          <div className="flex flex-col lg:flex-row items-center">
+            <div className="w-[100%] lg:w-[50%] text-center lg:text-left">
+              <h3 className="text-[#123149] font-arbutus text-[clamp(63px,5vw,96px)] header-heading">
+                Yield Every Minute™
               </h3>
               <p className="text-[#123149] text-[clamp(20px,1.25vw,24px)] leading-[150%] my-10">
-                With Poplar’s Yield as a Service, businesses <br /> can invest
-                their idle cash, turning their cash <br /> from a cost center to
+                With Poplar’s Yield as a Service, businesses can invest
+                their idle cash, turning their cash from a cost center to
                 a profit center.
               </p>
-              <ul className="flex flex-col gap-y-5">
+              <ul className="flex items-center lg:items-start flex-col gap-y-5 text-[#123149]">
                 <li className="flex items-center">
                   <img className="pr-2.5" src={tick} alt="#" />
                   Up to 8% APY
@@ -64,24 +65,28 @@ function Home() {
               </ul>
               <div className="mt-10 flex flex-col lg:flex-row ">
                 <input
-                  className="lg:py-[15px] lg:px-[20px] 2xl:py-[25px] 2xl:px-[30px] text-lg rounded-2xl text-[#123149] border border-solid border-[#D0D6DB] outline-0 "
+                  className="py-[25px] px-[30px] text-lg rounded-2xl text-[#123149] border border-solid border-[#D0D6DB] outline-0 mb-[20px] lg:mb-[0px]"
                   type="text"
                   placeholder="Enter your email"
                 />
 
-                <a className="bg-[#11CC7A] inline-block text-lg rounded-2xl text-white font-bold ml-2.5 cursor-pointer md:py-[15px] md:px-[20px] lg:py-[20px] lg:px-[25px] 2xl:py-[25px] 2xl:px-[30px] drop-shadow-[0_14px_40px_rgba(17,204,122,0.3)]">
+                <a className="bg-[#11CC7A] inline-block text-lg rounded-2xl text-white font-bold lg:ml-2.5 cursor-pointer py-[25px] px-[30px] drop-shadow-[0_14px_40px_rgba(17,204,122,0.3)]">
                   Join the waitlist
                   <img className="inline pl-2.5" src={arrow} alt="" />
                 </a>
               </div>
             </div>
 
-            <img className="w-[50%]" src={heroImage} alt="" />
+            <img className="hidden lg:block lg:w-[50%]" src={heroImage} alt="" />
+            
           </div>
+        </div>
+        <div className="mt-[86px] mb-[30px] relative">
+          <img className="absolute w-[100%] right-0 lg:hidden" src={heroBgMobile} alt="" />
         </div>
       </div>
 
-      <div className="my-[200px]">
+      {/* <div className="my-[200px]">
         <div className="container">
           <div className="flex items-center">
             <div className="w-[35%]">
@@ -101,7 +106,7 @@ function Home() {
             </div>
 
             <div className="flex flex-col items-center">
-              <img alt="" />
+             
               <div className="flex gap-20">
                 <div className="w-[510px] border-[#D0D6DB] border-solid border rounded-[20px] p-[40px] flex">
                   <img src={payIcon} alt="" />
@@ -116,7 +121,7 @@ function Home() {
                 <img src={linkIcon} alt="" />
               </div>
 
-              <div className="flex gap-20 pl-[250px] my-[20px]">
+              <div className="flex gap-20 pl-[200px] my-[20px]">
                 <img src={linkIcon} className="rotate-180" alt="" />
                 <div className="w-[510px] border-[#D0D6DB] border-solid border rounded-[20px] p-[40px] flex">
                   <img src={payIcon} alt="" />
@@ -145,9 +150,9 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div>
+      {/* <div>
         <div className="container">
           <div className="flex flex-col items-center">
             <h3 className="text-[#123149] font-arbutus text-[72px]">
@@ -184,9 +189,9 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="mt-[50px]">
+      {/* <div className="mt-[50px]">
         <div className="container">
           <div className="flex flex-row  justify-between relative">
             <div className="bg-[#11CC7A] w-[49%] max-w-[705px] py-10 px-[38px] rounded-[50px]">
@@ -284,9 +289,9 @@ function Home() {
 
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="mt-[100px]">
+      {/* <div className="mt-[100px]">
         <div className="container">
           <div>
             <div className="flex items-center justify-between mb-[30px]">
@@ -329,9 +334,9 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="my-[240px]">
+      {/* <div className="my-[240px]">
         <div className="container relative">
         <img className="absolute top-[-200px] left-[-100px] z-[-1]" src={blob} alt="" />
           <div className="z-1 h-[453px] bg-[#11CC7A] rounded-[80px]">
@@ -343,9 +348,9 @@ function Home() {
                 </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div>
+      {/* <div>
         <div className="container">
         <div className="flex items-center justify-between mb-[30px]">
               <h3 className="font-arbutus leading-[100%] text-[72px] text-[#123149]">Safe & <br /> <span className="text-[#11CC7A]"> Accessible</span></h3>
@@ -384,9 +389,9 @@ function Home() {
             </div>
         </div>
 
-      </div>
+      </div> */}
 
-      <div className="pt-[30px] pb-[100px]">
+      {/* <div className="pt-[30px] pb-[100px]">
         <div className="container text-center flex flex-col items-center gap-[40px]">
           <h3 className="font-arbutus text-7xl text-[#0a283f]">ready to <span className="text-[#11cc7a]">learn more?</span></h3>
           <p className="text-[#84939F] text-2xl leading-[150%]">With Poplar’s Yield as a Service, businesses can invest their idle cash, <br /> turning their cash from a cost center to a profit center.</p>
@@ -404,7 +409,7 @@ function Home() {
                 </a>
           </div>
         </div>
-      </div>
+      </div> */}
       
       <Footer />
     </>
