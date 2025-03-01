@@ -28,6 +28,8 @@ import blob from "../assets/blob.svg";
 
 import phone from "../assets/phone.png";
 
+import mbPhone from '../assets/mobile-phone.png'
+
 function Home() {
   const [selected, setSelected] = useState("1 month");
   const options = ["1 month", "12 months", "24 months", "36 months"];
@@ -195,7 +197,7 @@ function Home() {
                   <button
                     className={`${
                       option === selected
-                        ? "bg-green-500 py-[23.5px] xl:py-[27.5px] px-[40px] xl:px-[30px] text-white"
+                        ? "bg-green-500 py-[23.5px] xl:py-[27.5px] px-[40px] xl:px-[30px] text-white shadow-[0px_10px_14px_rgba(17,204,122,0.3)]"
                         : "text-[#D0D6DB]"
                     } transiton rounded-[15px] xl:rounded-[85px] cursor-pointer last:ml-2 py-[27.5px] px-[40px] xl:px-[30px] text-lg font-bold`}
                     onClick={() => setSelected(option)}
@@ -228,16 +230,16 @@ function Home() {
               <div>
                 <div className="flex justify-between flex-col xl:flex-row  xl:w-[80%]">
                   <div className="flex items-center justify-between w-[100%] xl:w-auto xl:items-start xl:block xl:justify-between">
-                    <p className="text-white text-lg leading-[80%]">
+                    <p className="text-white text-lg leading-[120%] xl:leading-[80%]">
                       In 36 months you will have
                     </p>
-                    <p className="text-[36px] xl:text-6xl font-arbutus text-white mt-[10px]">
+                    <p className="text-[36px] xl:text-6xl font-arbutus text-white mt-[10px] ml-[20px] xl:ml-[0px]">
                       $115,763
                     </p>
                   </div>
 
                   <div className="flex items-center justify-between w-[100%] xl:w-auto xl:items-start xl:block xl:pl-[40px]">
-                    <p className="text-white text-lg leading-[80%]">APY</p>
+                    <p className="text-white text-lg leading-[120%] xl:leading-[80%]">APY</p>
                     <p className="text-[36px] xl:text-6xl font-arbutus text-white mt-[10px]">
                       5%
                     </p>
@@ -246,7 +248,7 @@ function Home() {
 
                 <div className="flex justify-between flex-col xl:flex-row xl:w-[66%] xl:mt-[30px]">
                   <div className="flex flex-row xl:flex-col items-center xl:items-start justify-between w-[100%] xl:w-auto">
-                    <p className="text-white text-lg leading-[80%]">
+                    <p className="text-white text-lg leading-[120%] xl:leading-[80%]">
                       Automated
                     </p>
                     <p className="text-[36px] xl:text-6xl font-arbutus text-white xl:mt-[10px]">
@@ -255,7 +257,7 @@ function Home() {
                   </div>
 
                   <div className="flex flex-row xl:flex-col items-center xl:items-start justify-between w-[100%] xl:w-auto">
-                    <p className="text-white text-lg leading-[80%]">
+                    <p className="text-white text-lg leading-[120%] xl:leading-[80%]">
                       Withdrawl Limits
                     </p>
                     <p className="text-[36px] xl:text-6xl font-arbutus text-white mt-[10px]">
@@ -281,16 +283,16 @@ function Home() {
               <div>
                 <div className="flex justify-between flex-col xl:flex-row  xl:w-[80%]">
                   <div className="flex items-center justify-between w-[100%] xl:w-auto xl:items-start xl:block xl:justify-between">
-                    <p className="text-[#83939F] text-lg leading-[80%]">
+                    <p className="text-[#83939F] text-lg leading-[120%]">
                       In 36 months you will have
                     </p>
-                    <p className="text-[36px] xl:text-6xl font-arbutus text-[#123149] mt-[10px]">
+                    <p className="text-[36px] xl:text-6xl font-arbutus text-[#123149] mt-[10px] ml-[20px] xl:ml-[0px]">
                       $115,763
                     </p>
                   </div>
 
                   <div className="flex items-center justify-between w-[100%] xl:w-auto xl:items-start xl:block xl:pl-[40px]">
-                    <p className="text-[#83939F] text-lg leading-[80%]">APY</p>
+                    <p className="text-[#83939F] text-lg leading-[120%]">APY</p>
                     <p className="text-[36px] xl:text-6xl font-arbutus text-[#123149] mt-[10px]">
                       5%
                     </p>
@@ -299,7 +301,7 @@ function Home() {
 
                 <div className="flex justify-between flex-col xl:flex-row xl:w-[66%] xl:mt-[30px]">
                   <div className="flex flex-row xl:flex-col items-center xl:items-start justify-between w-[100%] xl:w-auto">
-                    <p className="text-[#83939F] text-lg leading-[80%]">
+                    <p className="text-[#83939F] text-lg leading-[100%]">
                       Automated
                     </p>
                     <p className="text-[36px] xl:text-6xl font-arbutus text-[#123149] xl:mt-[10px]">
@@ -308,7 +310,7 @@ function Home() {
                   </div>
 
                   <div className="flex flex-row xl:flex-col items-center xl:items-start justify-between w-[100%] xl:w-auto">
-                    <p className="text-[#83939F] text-lg leading-[80%]">
+                    <p className="text-[#83939F] text-lg leading-[120%] xl:leading-[80%]">
                       Withdrawl Limits
                     </p>
                     <p className="text-[36px] xl:text-6xl font-arbutus text-[#123149] mt-[10px]">
@@ -399,23 +401,10 @@ function Home() {
       </div>
 
       <div className="my-[240px]">
-        <div className="container relative">
-          <img
-            className="absolute top-[-200px] left-[-100px] z-[-1]"
-            src={blob}
-            alt=""
-          />
-          <div className="z-1 h-[453px] bg-[#11CC7A] rounded-[80px]">
-            <img className="absolute top-[-40%] right-20" src={phone} alt="" />
-            <div className="w-[64%] pt-[100px] pl-[100px] pb-[100px]">
-              <p className="text-white text-2xl">
-                -Steve Tellis, CTO @ Fortunian
-              </p>
-              <h3 className="font-arbutus text-5xl text-white mt-[40px]">
-                “We started doing this ourselves and then realized other people
-                would want to do it”
-              </h3>
-            </div>
+        <div className="container">
+          <div className="bg-[#11CC7A] rounded-[65px] py-[60px] px-[30px] text-center">
+            <h3 className="text-white font-arbutus text-4xl leading-[120%]">“We started doing this ourselves and then realized other people would want to do it”</h3>
+            <p className="text-2xl leading-[150%] text-white mt-[50px]">Lior Weinstein, CEO @ Fortunian</p>
           </div>
         </div>
       </div>
@@ -520,6 +509,11 @@ function Home() {
           </div>
         </div>
       </div>
+      
+      <div className="container">
+      <img className="w-full xl:hidden" src={mbPhone} alt="#" />
+      </div>
+    
 
       <Footer />
     </>
