@@ -435,9 +435,9 @@ function Home() {
 
           <div className="mt-[60px] mb-[100px]">
             <div className="flex flex-col xl:flex-row flex-wrap justify-between gap-y-[20px] relative">
-              <div className="  flex max-w-[705px] w-[100%] xl:w-[49%] flex-col items-center bg-[#FAFBFD] border border-solid border-[#CCD3D9] p-[60px] rounded-t-[20px] rounded-l-[20px]">
-                <img className="w-[99px]" src={cardOne} alt="" />
-                <h3 className="text-center text-[36px] text-[#123149] leading-[130%] font0-arbutus my-[20px]">
+              <div className="flex xl:max-w-[705px] w-[100%] xl:w-[49%] flex-col items-center bg-[#FAFBFD] border border-solid border-[#CCD3D9] p-[60px] rounded-t-[20px] rounded-l-[20px]">
+                <img className="w-[72px] xl:w-[99px]" src={cardOne} alt="" />
+                <h3 className="text-center text-2xl xl:text-[36px] text-[#123149] leading-[130%] font0-arbutus my-[20px]">
                   Set up an account online with zero costs
                 </h3>
                 <p className="text-[24px] text-[#8898A4] text-center">
@@ -446,9 +446,9 @@ function Home() {
                 </p>
               </div>
 
-              <div className="max-w-[705px] w-[100%] xl:w-[49%] flex flex-col items-center  border border-solid border-[#CCD3D9] p-[60px] rounded-t-[20px] rounded-r-[20px]">
-                <img className="w-[99px]" src={cardOne} alt="" />
-                <h3 className="text-center text-[36px] text-[#123149] leading-[130%] font0-arbutus my-[20px]">
+              <div className="xl:max-w-[705px] w-[100%] xl:w-[49%] flex flex-col items-center  border border-solid border-[#CCD3D9] p-[60px] rounded-t-[20px] rounded-r-[20px]">
+                <img className="w-[72px] xl:w-[99px]" src={cardOne} alt="" />
+                <h3 className="text-center text-2xl xl:text-[36px] text-[#123149] leading-[130%] font0-arbutus my-[20px]">
                   Set up an account online with zero costs
                 </h3>
                 <p className="text-[24px] text-[#8898A4] text-center">
@@ -457,9 +457,9 @@ function Home() {
                 </p>
               </div>
 
-              <div className="max-w-[705px] w-[100%] xl:w-[49%] flex flex-col items-center  border border-solid border-[#CCD3D9] p-[60px] rounded-l-[20px] rounded-b-[20px]">
-                <img className="w-[99px]" src={cardOne} alt="" />
-                <h3 className="text-center text-[36px] text-[#123149] leading-[130%] font0-arbutus my-[20px]">
+              <div className="xl:max-w-[705px] w-[100%] xl:w-[49%] flex flex-col items-center  border border-solid border-[#CCD3D9] p-[60px] rounded-l-[20px] rounded-b-[20px]">
+                <img className="w-[72px] xl:w-[99px]" src={cardOne} alt="" />
+                <h3 className="text-center text-2xl xl:text-[36px] text-[#123149] leading-[130%] font0-arbutus my-[20px]">
                   Set up an account online with zero costs
                 </h3>
                 <p className="text-[24px] text-[#8898A4] text-center">
@@ -468,9 +468,9 @@ function Home() {
                 </p>
               </div>
 
-              <div className="max-w-[705px] w-[100%] xl:w-[49%] flex flex-col items-center  border border-solid border-[#CCD3D9] p-[60px] bg-[#FAFBFD] rounded-r-[20px] rounded-b-[20px]">
-                <img className="w-[99px]" src={cardOne} alt="" />
-                <h3 className="text-center text-[36px] text-[#123149] leading-[130%] font0-arbutus my-[20px]">
+              <div className="xl:max-w-[705px] w-[100%] xl:w-[49%] flex flex-col items-center  border border-solid border-[#CCD3D9] p-[60px] bg-[#FAFBFD] rounded-r-[20px] rounded-b-[20px]">
+                <img className="w-[72px] xl:w-[99px]" src={cardOne} alt="" />
+                <h3 className="text-center text-2xl xl:text-[36px] text-[#123149] leading-[130%] font0-arbutus my-[20px]">
                   Set up an account online with zero costs
                 </h3>
                 <p className="text-[24px] text-[#8898A4] text-center">
@@ -485,23 +485,35 @@ function Home() {
 
       <div className="pt-[30px] pb-[100px]">
         <div className="container text-center flex flex-col items-center gap-[40px]">
-          <h3 className="font-arbutus text-[36px] xl:text-7xl text-[#0a283f]">
+          <h3 className="font-arbutus text-2xl xl:text-7xl text-[#0a283f]">
             ready to <span className="text-[#11cc7a]">learn more?</span>
           </h3>
           <p className="text-[#84939F] text-lg xl:text-2xl leading-[150%] mt-[]">
             With Poplar’s Yield as a Service, businesses can invest their idle
-            cash, <br /> turning their cash from a cost center to a profit
+            cash, turning their cash from a cost center to a profit
             center.
           </p>
 
-          <div className="flex flex-col lg:flex-row ">
+          <div className="flex gap-2.5 xl:gap-0 flex-col lg:flex-row w-full lg:w-auto">
             <input
-              className="lg:py-[15px] lg:px-[20px] 2xl:py-[25px] 2xl:px-[30px] text-lg rounded-2xl text-[#123149] border border-solid border-[#D0D6DB] outline-0 xl:w-auto"
+              className="lg:py-[15px] lg:px-[20px] 2xl:py-[25px] 2xl:px-[30px] text-lg rounded-2xl text-[#123149] border border-solid border-[#D0D6DB] outline-0 pl-[30px] py-[25px] md:hidden"
               type="text"
+              placeholder="Enter your name"
+            />
+
+             <input
+              className="lg:py-[15px] lg:px-[20px] 2xl:py-[25px] 2xl:px-[30px] text-lg rounded-2xl text-[#123149] border border-solid border-[#D0D6DB] outline-0 pl-[30px] py-[25px] md:hidden"
+              type="number"
+              placeholder="Enter your phone #"
+            />
+
+             <input
+              className="lg:py-[15px] lg:px-[20px] 2xl:py-[25px] 2xl:px-[30px] text-lg rounded-2xl text-[#123149] border border-solid border-[#D0D6DB] outline-0 pl-[30px] py-[25px]"
+              type="email"
               placeholder="Enter your email"
             />
 
-            <a className="bg-[#11CC7A] inline-block text-lg rounded-2xl text-white font-bold ml-2.5 cursor-pointer md:py-[15px] md:px-[20px] lg:py-[20px] lg:px-[25px] 2xl:py-[25px] 2xl:px-[30px] drop-shadow-[0_14px_40px_rgba(17,204,122,0.3)]">
+            <a className="bg-[#11CC7A] inline-block text-lg rounded-2xl text-white font-bold xl:ml-2.5 cursor-pointer md:py-[15px] md:px-[20px] lg:py-[20px] lg:px-[25px] 2xl:py-[25px] 2xl:px-[30px] drop-shadow-[0_14px_40px_rgba(17,204,122,0.3)] pl-[30px] py-[25px] w-[100%]">
               Join the waitlist
               <img className="inline pl-2.5" src={arrow} alt="" />
             </a>
